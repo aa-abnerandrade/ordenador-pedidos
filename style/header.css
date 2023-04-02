@@ -1,0 +1,12 @@
+header {
+    background-color: var(--roxoPrimario);
+    color: var(--brancoAbsoluto);
+    padding: 1rem;
+}
+
+header .logo {
+    height: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: auto;
+}
