@@ -1,4 +1,4 @@
-class Pedidos {
+class Pedido {
     constructor(inputNumero, inputData, inputProduto, inputValor) {
       this.numero = inputNumero;
       this.data = inputData;

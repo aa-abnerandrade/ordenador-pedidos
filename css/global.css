@@ -1,18 +1,16 @@
 :root {
     --brancoAbsoluto: #FFFFFF;
-    --brancoCintilante: #FEFEFE;
     --brancoAmeno: #F8F8FF;
-    --brancoAmenoTransparente: #F8F8FFAA;
     
     --pretoAbsoluto: #000000;
-    --pretoCintilante: #010101;
     --pretoAmeno: #1C1C1C;
-    --pretoAmenoTransparente: #1C1C1CAA;
 
     --roxoPrimario: #612A92;
     --roxoSecundario: #582c92;
     --verdePrimario: #C5E72A;
     --verdeSecundario: #657C13;
+    --cinzaPrimario: #EFF1EE;
+    --cinzaSecundario: #EFF1EE;
 
 
 
@@ -20,3 +18,4 @@
     font-size: 14px;
     scroll-behavior: smooth;
 }
+

@@ -1,0 +1,74 @@
+.orders__head {
+    width: 45%;
+    display: inline-block;
+
+}
+
+.orders__arrange {
+    width: 45%;
+    display: inline-block;
+    text-align: end;
+
+}
+
+.orders__arrange #arrangeBy {
+    height: 4rem;
+    border: 2px solid var(--cinzaSecundario);
+    border-radius: 6px;
+    background-color: var(--roxoPrimario);
+    color: var(--brancoAbsoluto);
+    font-size: 1.25rem;
+    padding: 16px 48px 16px 16px;
+}
+
+
+.orders__content {
+
+}
+
+.orders__content__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.orders__item {
+    border: 1px solid var(--cinzaSecundario);
+    border-radius: 2px;
+    margin-bottom: 1rem;
+    padding: 0 2rem;
+}
+
+.orders__item dt {
+    color: var(--pretoAmeno);
+    font-size: .8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--cinzaSecundario);
+    line-height: 2rem;
+}
+
+.orders__item dd {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item__orderBody--photo {
+    max-width: 80px;
+    width: 80px;
+    vertical-align: middle;
+    max-height: 80px;
+}
+
+.item__orderBody--photo img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+.item__orderBody--description {
+    width: 40%;
+}

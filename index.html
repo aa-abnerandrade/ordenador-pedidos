@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedidos Feitos</title>
+    <title>Minha Conta</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style/reset.css">
-    <link rel="stylesheet" href="style/global.css">
-    <link rel="stylesheet" href="style/header.css">
-    <link rel="stylesheet" href="style/body.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main-client.css">
+    <link rel="stylesheet" href="css/main-orders.css">
 
     <!-- TIPOGRAFIA-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,77 +26,107 @@
         <img class="logo" src="assets/images/logo-zoom.svg" alt="">
     </header>
 
-    <body>
+    <main>
 
         <section class="container-page">
-            
-            <section class="page__sec-cliente">
-            </section>
+            <h1>Minha Conta</h1>
 
-            <section class="page__sec-pedidos">
+            <section class="page__sec-client">
                 
-
-
-                <div class="pedidos__head">
-                    <table>
-                        <tr>
-                            <th>Número do Pedido</th>
-                            <th>Data do Pedido</th>
-                            <th>Valor</th>
-                          </tr>
-                    </table>
+                <div class="client__head">
+                    <h2>Dados Pessoais</h2>
                 </div>
 
-                <div>
-                    <ul class="pedidos__list">
-            
-                        <li class="pedidos__item">
-                            <table>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Data do Pedido</td>
-                                    <td>Valor</td>
-                                </tr>
-                            </table>
-                        </li>
-            
-                        <li class="pedidos__item">
-                            <table>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Data do Pedido</td>
-                                    <td>Valor</td>
-                                  </tr>
-                            </table>
-                        </li>
-            
-                        <li class="pedidos__item">
-                            <table>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Data do Pedido</td>
-                                    <td>Valor</td>
-                                  </tr>
-                            </table>
-                        </li>
-            
-                        <li class="pedidos__item">
-                            <table>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Data do Pedido</td>
-                                    <td>Valor</td>
-                                  </tr>
-                            </table>
-                        </li>
-                    </ul>
+                <div class="cliente__content">
+                    <pre>Email<br>email@email.com</pre>
+                    <pre>Nome<br>João Silva</pre>
+                    <pre>CPF<br>123.456.789-00</pre>
+                </div>
+
+            </section>
+
+
+            <section class="page__sec-orders">
+                
+                <div class="orders__head">
+                    <h2>Pedidos</h2>
+                </div>
+
+                <div class="orders__arrange">
+                    <select name="" id="arrangeBy">
+                        <option value="">Mais Recente</option>
+                        <option value="">Mais Antigo</option>
+                        <option value="">Menor Valor</option>
+                        <option value="">Maior Valor</option>
+                    </select>
+                </div>
+
+
+                <div class="orders__content">
+
+                    <dl class="orders__content__list">
+                        
+                        <div class="orders__item">
+                            <dt class="orders__item__orderHead"><h3>Pedido nº 1</h3><em>feito dia 20/05/2019</em></dt>
+                            <dd class="orders__item__orderBody">
+                                <div class="item__orderBody--photo">
+                                    <img src="assets/images/products/lavaseca.jpg" alt="">
+                                </div>
+                                <div class="item__orderBody--description">
+                                    <span>Descrição</span>
+                                    <p>Lava e Seca 11KG</p>
+                                </div>
+                                <div class="item__orderBody--price">
+                                    <span>Valor</span>
+                                    <p>R$ 3.499,10</p>
+                                </div>
+                            </dd>
+                        </div>
+
+                        <div class="orders__item">
+                            <dt class="orders__item__orderHead"><h3>Pedido nº 7</h3><em>feito dia 05/03/2023</em></dt>
+                            <dd class="orders__item__orderBody">
+                                <div class="item__orderBody--photo">
+                                    <img src="assets/images/products/playstationcinco.jpg" alt="">
+                                </div>
+                                <div class="item__orderBody--description">
+                                    <span>Descrição</span>
+                                    <p>Playsation 5</p>
+                                </div>
+                                <div class="item__orderBody--price">
+                                    <span>Valor</span>
+                                    <p>R$ 4.184,99</p>
+                                </div>
+                            </dd>
+                        </div>
+
+                        <div class="orders__item">
+                            <dt class="orders__item__orderHead"><h3>Pedido nº 5</h3><em>feito dia 12/12/2022</em></dt>
+                            <dd class="orders__item__orderBody">
+                                <div class="item__orderBody--photo">
+                                    <img src="assets/images/products/bicicleta.jpg" alt="">
+                                </div>
+                                <div class="item__orderBody--description">
+                                    <span>Descrição</span>
+                                    <p>Bicicleta 18 Marchas</p>
+                                </div>
+                                <div class="item__orderBody--price">
+                                    <span>Valor</span>
+                                    <p>R$ 566,99</p>
+                                </div>
+                            </dd>
+                        </div>
+
+                    </dl>
+                    
                 </div>
             </section>
 
         </section>
 
 
-    </body>
+    </main>
     
+    <script src="script/main.js"></script>
 </body>
 </html>
