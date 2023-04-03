@@ -18,24 +18,22 @@ export function carregarCliente(urlCliente) {
     (async ()=> {
         const jDados = await getFileData(urlCliente);
         console.log(jDados);
-        construirCliente(jDados.dados);
-        construirPedidos(jDados.pedidos);
+        var objCliente = construirCliente(jDados.dados);
+        var lstPedidos = construirPedidos(jDados.pedidos);
 
-        
-        exibirClienteEmHTML(jDados);
     })();
 }
 
 function construirCliente(dadosCliente) {
     console.log(dadosCliente);
-   
-    const [currentClient] = dadosCliente.map( (dataSlot) => data);
-    console.log(currentClient)
-
+    const cliente = new Cliente(dadosCliente.nome, dadosCliente.email, dadosCliente.cpf);
+    return cliente;
 }
 
 function construirPedidos(dadosPedidos) {
     console.log(dadosPedidos)
+    const [pedidos] = dadosPedidos.map( (pedidoSlot)=> pedido);
+    console.log([pedidos]);
 }
 
 
