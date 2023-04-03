@@ -7,7 +7,7 @@
         },
     
     "pedidos": 
-        [ 
+        [
 
             {
                 "numero": 1,
@@ -29,6 +29,15 @@
             {
                 "numero": 5,
                 "data": "2022-12-12",
+                "photo": "",
+                "produto": "",
+                "valor": 158.99
+
+            },
+
+            {
+                "numero": 3,
+                "data": "2021-07-06",
                 "photo": "",
                 "produto": "",
                 "valor": 158.99
@@ -58,6 +67,5 @@
                 "produto": "",
                 "valor": 158.99
             }
-
         ]
 }

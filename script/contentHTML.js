@@ -11,10 +11,11 @@ export function exibirClienteEmHTML(objCliente) {
     console.log('Converter Cliente OK')
 }
 
+
 export function exibirPedidosEmHTML(lstPedidos) {
     const fieldOrders = document.querySelector('.orders__content__list');
 
-
+    console.log(lstPedidos);
     console.log('Converter Order OK');
 
 }

@@ -34,8 +34,14 @@ function construirCliente(dadosCliente) {
 
 function construirPedidos(dadosPedidos) {
     console.log(dadosPedidos)
-    const pedidos = dadosPedidos.map( (pedidoSlot)=> pedidoSlot.pedido);
-    exibirPedidosEmHTML(pedidos);
+
+    dadosPedidos.array.forEach(element => {
+        
+    });
+
+    const [pedidos] = dadosPedidos.map( (pedidoSlot)=> pedidoSlot.pedido);
+    console.log([pedidos]);
+    //exibirPedidosEmHTML(pedidos);
     return pedidos;
 }
 
