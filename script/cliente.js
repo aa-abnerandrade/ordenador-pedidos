@@ -7,7 +7,11 @@ class Cliente {
     }
 
     adicionarPedido() {
-        this.pedidos.push(novoPedido)
+        this.pedidos.push(novoPedido);
+    }
+
+    orderPedido() {
+        
     }
 
 }

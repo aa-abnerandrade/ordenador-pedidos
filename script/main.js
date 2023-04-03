@@ -1,6 +1,11 @@
-const urlConta = '';
+// //import { carregarPagina } from "/mainService.js";
 
-const cliente = require('clienteService.js');
+// const urlCliente = require('./clienteService.js');
 
-carregarPagina();
+// mainService.carregarPagina();
+// carregarPagina(urlCliente);
+
+
+console.log("Final de Main");
+
 
