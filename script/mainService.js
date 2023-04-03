@@ -20,7 +20,7 @@ export function carregarCliente(urlCliente) {
         const jDados = await getFileData(urlCliente);
         console.log(jDados);
         var objCliente = construirCliente(jDados.dados);
-        var lstPedidos = construirPedidos(jDados.pedidos);
+        var lstPedidos = construirPedidos(objCliente, jDados.pedidos);
 
     })();
 }
@@ -32,17 +32,17 @@ function construirCliente(dadosCliente) {
     return cliente;
 }
 
-function construirPedidos(dadosPedidos) {
+function construirPedidos(objCliente, dadosPedidos) {
     console.log(dadosPedidos)
 
-    dadosPedidos.array.forEach(element => {
-        
+    dadosPedidos.forEach((pedido) => {
+
+        objCliente.adicionarPedido(pedido.numero, pedido.data, pedido.foto, pedido.produto, pedido.valor)
+        //exibirPedidosEmHTML(pedido);
     });
 
-    const [pedidos] = dadosPedidos.map( (pedidoSlot)=> pedidoSlot.pedido);
-    console.log([pedidos]);
-    //exibirPedidosEmHTML(pedidos);
-    return pedidos;
+    
+    return true;
 }
 
 

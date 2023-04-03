@@ -1,3 +1,5 @@
+import { Pedido } from './Pedido.js';
+
 export class Cliente {
     constructor(inputNome, inputEmail, inputCPF) {
         this.nome = inputNome;
@@ -7,10 +9,11 @@ export class Cliente {
     }
 
     adicionarPedido(novoPedido) {
+        new Pedido(novoPedido)
         this.pedidos.push(novoPedido);
     }
 
-    orderPedido() {
+    ordernarPedido() {
         
     }
 

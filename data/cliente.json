@@ -12,26 +12,26 @@
             {
                 "numero": 1,
                 "data": "2019-05-20",
-                "photo": "",
-                "produto": "",
-                "valor": 158.99
+                "photo": "https://raw.githubusercontent.com/aa-abnerandrade/zum_ordenaprecos/main/assets/images/products/bicicleta.jpg",
+                "produto": "Bicicleta 18 Marchas",
+                "valor": 566.99
             },
 
             {
                 "numero": 7,
                 "data": "2023-03-05",
-                "photo": "",
-                "produto": "",
-                "valor": 158.99
+                "photo": "https://raw.githubusercontent.com/aa-abnerandrade/zum_ordenaprecos/main/assets/images/products/playstationcinco.jpg",
+                "produto": "Playstation 5",
+                "valor": 4184.99
 
             },
             
             {
                 "numero": 5,
                 "data": "2022-12-12",
-                "photo": "",
-                "produto": "",
-                "valor": 158.99
+                "photo": "https://raw.githubusercontent.com/aa-abnerandrade/zum_ordenaprecos/main/assets/images/products/lavaseca.jpg",
+                "produto": "Lava e Seca 11Kg",
+                "valor": 3499.10
 
             },
 
