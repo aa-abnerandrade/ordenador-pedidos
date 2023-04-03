@@ -13,6 +13,7 @@ export function exibirClienteEmHTML(objCliente) {
 
 export function exibirPedidosEmHTML(lstPedidos) {
     const fieldOrders = document.querySelector('.orders__content__list');
+    fieldOrders.innerHTML = '';
 
     lstPedidos.forEach((pedido) => {
         fieldOrders.innerHTML += 

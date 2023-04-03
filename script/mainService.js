@@ -1,6 +1,7 @@
 import { Cliente } from './cliente.js';
 import { getFileData } from './api.js';
 import { exibirClienteEmHTML , exibirPedidosEmHTML } from './contentHTML.js'
+import { ordenarPadrao, ordenarPorDataDecrescente, ordenarPorDataCrescente, ordenarPorValorDecrescente, ordenarPorValorCrescente} from './arrangeOrders.js'
 
 
 export function obterCliente() {
@@ -38,9 +39,23 @@ export function ordenarPedidos(option, cliente) {
     console.log(option, cliente)
 
     switch(option) {
-        case "1":
-            console.log("Opção 1");
+        case "0":
+            ordenarPadrao(cliente);
             break;
+        case "1":
+            ordenarPorDataDecrescente(cliente);
+            break;
+        case "2":
+            ordenarPorDataCrescente(cliente);
+            break;
+        case "3":
+            ordenarPorValorDecrescente(cliente);
+            break;
+        case "4":
+            ordenarPorValorCrescente(cliente);
+            break;
+        default:
+            ordenarPorRelevancia(cliente);
     }
 
     
