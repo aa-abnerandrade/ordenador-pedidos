@@ -1,0 +1,11 @@
+.client__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: .5rem 0;
+}
+
+.client__content pre::first-line {
+    font-weight: 700;
+}
+

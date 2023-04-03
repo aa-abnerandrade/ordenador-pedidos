@@ -15,7 +15,7 @@ main {
 
 .container-page section {
     width: 80%;
-    margin: 0 auto; 
+    margin: 2rem auto; 
 }
 
 
@@ -23,6 +23,8 @@ main {
     color: var(--pretoAmenoTransparente);
     font-size: 2rem;
     font-weight: 200;
+    width: 80%;
+    margin: 2rem auto;
 }
 
 .container-page h2 {

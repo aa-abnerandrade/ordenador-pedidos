@@ -1,13 +1,14 @@
 class Pedido {
-    constructor(inputNumero, inputData, inputProduto, inputValor) {
+    constructor(inputNumero, inputData, inputFoto, inputProduto, inputValor) {
       this.numero = inputNumero;
       this.data = inputData;
+      this.foto = inputFoto;
       this.produto = inputProduto;
       this.valor = inputValor;
     }
   }
 
-listaPedidos = [
+let listaPedidos = [
 
     { numeropedido: 1, data: 20/05/2019 },
     { numeropedido: 7, data: 05/03/2023 },

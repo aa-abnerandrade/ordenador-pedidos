@@ -1,9 +1,12 @@
-// //import { carregarPagina } from "/mainService.js";
+import { obterCliente } from './mainService.js';
+import { carregarCliente } from './mainService.js';
 
-// const urlCliente = require('./clienteService.js');
 
-// mainService.carregarPagina();
-// carregarPagina(urlCliente);
+const urlCliente = obterCliente();
+carregarCliente(urlCliente);
+
+
+
 
 
 console.log("Final de Main");

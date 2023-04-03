@@ -1,20 +1,24 @@
 {
-    "nome": "João Silva",
-    "email": "joao@email.com",
-    "cpf": "123.456.789-00",
+    "dados": 
+        {
+            "nome": "João Silva",
+            "email": "joao@email.com",
+            "cpf": "123.456.789-00"
+        },
+    
     "pedidos": 
-    [
-        {
+        [
+            {
 
-        },
+            },
 
-        {
+            {
 
-        },
-        
-        {
+            },
+            
+            {
 
-        }
+            }
 
-    ]
+        ]
 }

@@ -1,4 +1,4 @@
-class Cliente {
+export class Cliente {
     constructor(inputNome, inputEmail, inputCPF) {
         this.nome = inputNome;
         this.email = inputEmail;
@@ -6,7 +6,7 @@ class Cliente {
         this.pedidos = [];
     }
 
-    adicionarPedido() {
+    adicionarPedido(novoPedido) {
         this.pedidos.push(novoPedido);
     }
 
