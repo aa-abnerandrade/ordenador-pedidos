@@ -9,12 +9,21 @@ export class Cliente {
     }
 
     adicionarPedido(novoPedido) {
-        new Pedido(novoPedido)
-        this.pedidos.push(novoPedido);
+        console.log("Adicionar novo Pedido")
+        console.log(novoPedido);
+        //let pedido = new Pedido(novoPedido.numero, novoPedido.data, novoPedido.foto, novoPedido.produto, novoPedido.valor);
+        //this.pedidos.push(pedido);
+    }
+
+    listarPedidos() {
+        console.log("Pedidos do Cliente")
+        this.pedidos.forEach((cadaPedido)=> {
+            console.log(cadaPedido)
+        })
     }
 
     ordernarPedido() {
-        
+        console.log("");
     }
 
 }

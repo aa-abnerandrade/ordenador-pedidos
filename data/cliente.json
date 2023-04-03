@@ -38,34 +38,34 @@
             {
                 "numero": 3,
                 "data": "2021-07-06",
-                "photo": "",
-                "produto": "",
-                "valor": 158.99
+                "photo": "https://raw.githubusercontent.com/aa-abnerandrade/zum_ordenaprecos/main/assets/images/products/tablet.jpg",
+                "produto": "iPad 64GB",
+                "valor": 2167.99
 
             },
 
             {
                 "numero": 2,
                 "data": "2020-08-09",
-                "photo": "",
-                "produto": "",
-                "valor": 158.99
+                "photo": "https://raw.githubusercontent.com/aa-abnerandrade/zum_ordenaprecos/main/assets/images/products/notebook.jpg",
+                "produto": "Notebook Dell i7",
+                "valor": 8423.10
             },
 
             {
                 "numero": 4,
                 "data": "2021-12-13",
-                "photo": "",
-                "produto": "",
-                "valor": 158.99
+                "photo": "https://raw.githubusercontent.com/aa-abnerandrade/zum_ordenaprecos/main/assets/images/products/windows.jpg",
+                "produto": "Windows 10 Professional",
+                "valor": 645.00
             },
 
             {
                 "numero": 0,
                 "data": "2023-02-01",
-                "photo": "",
-                "produto": "",
-                "valor": 158.99
+                "photo": "https://raw.githubusercontent.com/aa-abnerandrade/zum_ordenaprecos/main/assets/images/products/cadeira.jpg",
+                "produto": "Cadeira Gamer Mx1 ",
+                "valor": 799.99
             }
         ]
 }
