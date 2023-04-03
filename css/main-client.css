@@ -3,9 +3,11 @@
     flex-direction: row;
     justify-content: space-between;
     padding: .5rem 0;
+    font-weight: 700;
 }
 
 .client__content pre::first-line {
-    font-weight: 700;
+    font-weight: 400;
+    color: var(--cinzaPrimario);
 }
 

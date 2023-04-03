@@ -1,5 +1,5 @@
 main {
-    background-color: var(--cinzaPrimario);
+    background-color: var(--cinzaSecundario);
     box-sizing: border-box;
     max-width: 100vw;
     display: flex;
@@ -20,7 +20,7 @@ main {
 
 
 .container-page h1 {
-    color: var(--pretoAmenoTransparente);
+    color: var(--cinzaPrimario);
     font-size: 2rem;
     font-weight: 200;
     width: 80%;

@@ -1,5 +1,6 @@
 import { Cliente } from './cliente.js';
 import { getFileData } from './api.js';
+import { exibirClienteEmHTML , exibirPedidosEmHTML } from './contentHTML.js'
 
 
 export function obterCliente() {
@@ -19,7 +20,9 @@ export function carregarCliente(urlCliente) {
         const jDados = await getFileData(urlCliente);
         console.log(jDados);
         var objCliente = construirCliente(jDados.dados);
+        exibirClienteEmHTML(objCliente);
         var lstPedidos = construirPedidos(jDados.pedidos);
+        exibirPedidosEmHTML(lstPedidos);
 
     })();
 }
@@ -32,20 +35,12 @@ function construirCliente(dadosCliente) {
 
 function construirPedidos(dadosPedidos) {
     console.log(dadosPedidos)
-    const [pedidos] = dadosPedidos.map( (pedidoSlot)=> pedido);
-    console.log([pedidos]);
+    const pedidos = dadosPedidos.map( (pedidoSlot)=> pedidoSlot.pedido);
+    console.log(pedidos);
 }
 
 
-function exibirClienteEmHTML(jsonDadosCliente) {
-    const fieldClient = document.querySelector('.client__content');
-    const fieldOrders = document.querySelector('.orders__content__list');
-    
-    //fieldClient.innerHTML += ``
-    
-    
-    console.log('Converter para HTML OK')
-}
+
 
 
 function ordenarPedido() {
