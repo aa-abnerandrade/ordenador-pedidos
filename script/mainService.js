@@ -20,9 +20,7 @@ export function carregarCliente(urlCliente) {
         const jDados = await getFileData(urlCliente);
         console.log(jDados);
         var objCliente = construirCliente(jDados.dados);
-        exibirClienteEmHTML(objCliente);
         var lstPedidos = construirPedidos(jDados.pedidos);
-        exibirPedidosEmHTML(lstPedidos);
 
     })();
 }
@@ -30,13 +28,15 @@ export function carregarCliente(urlCliente) {
 function construirCliente(dadosCliente) {
     console.log(dadosCliente);
     const cliente = new Cliente(dadosCliente.nome, dadosCliente.email, dadosCliente.cpf);
+    exibirClienteEmHTML(cliente);
     return cliente;
 }
 
 function construirPedidos(dadosPedidos) {
     console.log(dadosPedidos)
     const pedidos = dadosPedidos.map( (pedidoSlot)=> pedidoSlot.pedido);
-    console.log(pedidos);
+    exibirPedidosEmHTML(pedidos);
+    return pedidos;
 }
 
 
