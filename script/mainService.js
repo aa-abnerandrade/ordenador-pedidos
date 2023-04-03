@@ -4,44 +4,44 @@ import { exibirClienteEmHTML , exibirPedidosEmHTML } from './contentHTML.js'
 
 
 export function obterCliente() {
-    const cliente001 = new Cliente('João Silva', 'joao@email.com', '123.456.789-00');
     return 'https://raw.githubusercontent.com/aa-abnerandrade/zum_ordenaprecos/main/data/cliente.json';
 }
 
-
-export function carregarCliente(urlCliente) {
-    (async ()=> {
+export function carregarPagina(urlCliente) {
+    let oc;
+    oc = (async ()=> {
         const jDados = await getFileData(urlCliente);
         var objCliente = construirCliente(jDados.dados);
         var lstPedidos = construirPedidos(objCliente, jDados.pedidos);
+        console.log(objCliente);
+        return objCliente;
     })();
+    return oc;
 }
 
 function construirCliente(dadosCliente) {
     const cliente = new Cliente(dadosCliente.nome, dadosCliente.email, dadosCliente.cpf);
     exibirClienteEmHTML(cliente);
-    console.log(cliente)
     return cliente;
 }
 
 function construirPedidos(objCliente, dadosPedidos) {
-    console.log(objCliente);
-    console.log(dadosPedidos);
-
     dadosPedidos.forEach((pedido) => {
-        console.log(pedido);
-        //objCliente.adicionarPedido(pedido);
-        //exibirPedidosEmHTML(pedido);
+        objCliente.adicionarPedido(pedido);
     });
-
-    console.log(objCliente.pedidos);
+    exibirPedidosEmHTML(objCliente.pedidos)
     return objCliente.pedidos;
 }
 
 
+export function ordenarPedidos(option, cliente) {
+    console.log(option, cliente)
 
+    switch(option) {
+        case "1":
+            console.log("Opção 1");
+            break;
+    }
 
-
-function ordenarPedido() {
-
+    
 }

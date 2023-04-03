@@ -50,10 +50,11 @@
                     <h2>Pedidos</h2>
 
                     <select name="" id="arrangeBy">
-                        <option value="">Mais Recente</option>
-                        <option value="">Mais Antigo</option>
-                        <option value="">Menor Valor</option>
-                        <option value="">Maior Valor</option>
+                        <option value="0">Relevantes</option>
+                        <option value="1">Recentes Primeiro</option>
+                        <option value="2">Antigos Primeiro</option>
+                        <option value="3">Menor Valor</option>
+                        <option value="4">Maior Valor</option>
                     </select>
                 </div>
 
@@ -61,7 +62,7 @@
 
                     <dl class="orders__content__list" id="orders__content__list">
                         
-                        <div class="orders__item">
+                        <!-- <div class="orders__item">
                             <dt class="orders__item__orderHead"><h3>Pedido nº 1</h3><em>feito dia 20/05/2019</em></dt>
                             <dd class="orders__item__orderBody">
                                 <div class="item__orderBody--photo">
@@ -76,41 +77,8 @@
                                     <p>R$ 3.499,10</p>
                                 </div>
                             </dd>
-                        </div>
+                        </div> -->
 
-                        <div class="orders__item">
-                            <dt class="orders__item__orderHead"><h3>Pedido nº 7</h3><em>feito dia 05/03/2023</em></dt>
-                            <dd class="orders__item__orderBody">
-                                <div class="item__orderBody--photo">
-                                    <img src="assets/images/products/playstationcinco.jpg" alt="">
-                                </div>
-                                <div class="item__orderBody--description">
-                                    <span>Descrição</span>
-                                    <p>Playsation 5</p>
-                                </div>
-                                <div class="item__orderBody--price">
-                                    <span>Valor</span>
-                                    <p>R$ 4.184,99</p>
-                                </div>
-                            </dd>
-                        </div>
-
-                        <div class="orders__item">
-                            <dt class="orders__item__orderHead"><h3>Pedido nº 5</h3><em>feito dia 12/12/2022</em></dt>
-                            <dd class="orders__item__orderBody">
-                                <div class="item__orderBody--photo">
-                                    <img src="assets/images/products/bicicleta.jpg" alt="">
-                                </div>
-                                <div class="item__orderBody--description">
-                                    <span>Descrição</span>
-                                    <p>Bicicleta 18 Marchas</p>
-                                </div>
-                                <div class="item__orderBody--price">
-                                    <span>Valor</span>
-                                    <p>R$ 566,99</p>
-                                </div>
-                            </dd>
-                        </div>
 
                     </dl>
                     
@@ -123,5 +91,6 @@
     </main>
     
     <script type="module" src="script/main.js"></script>
+
 </body>
 </html>
