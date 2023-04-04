@@ -5,7 +5,7 @@
 <br><br>
 ## Linguagens
 
-<div style="display: flex; max-width: 100%; justify-content: space-between;">
+<div style="display: flex; max-width: 100%; justify-content: space-around;">
     <img style="width:30%;" src="to_readme/js.png" alt="Logo da Linguagem JavaScript">
     <img style="width:30%;" src="to_readme/html.png" alt="Logo da Lingaguem de Marcação HTML 5">
     <img style="width:30%;" src="to_readme/css.png" alt="Logo da Lingaguem de Marcação CSS 3">
@@ -14,9 +14,8 @@
 <br><br>
 ## Tecnologias
 
-<div style="display: flex; max-width: 100%; justify-content: space-between;">
-    <img style="width:30%;" src="to_readme/json.png" alt="Logo da Extensão Json">
-
+<div style="display: flex; max-width: 100%; justify-content: space-around;">
+    <img style="width:20%;" src="to_readme/json.png" alt="Logo da Extensão Json">
 </div>
 
 <br><br>
@@ -35,8 +34,10 @@
 <br><br>
 ## Screenshot
 
-<div style="display: flex; max-width: 50%; justify-content: center;">
-    <img src=""/>  
+<div style="display: flex; max-width: 100%; justify-content: space-around;">
+    <img style="height: 300px; width:auto;" src="to_readme/screenshot-mobile.png" alt="Demostrativo da página utilizando um smartphone">
+    <img style="height: 300px; width: auto;" src="to_readme/screenshot-tablet.png" alt="Demostrativo da página utilizando um tablet"> 
+   <img style="height: 300px; width: auto;" src="to_readme/screenshot-desktop.png" alt="Demostrativo da página utilizando um Desktop"> 
 </div>
 
 
@@ -50,11 +51,13 @@ Para acessar, <a href = "#">clique aqui</a>.
 <br><br>
 ## Autoria
 
-Abner Andrade Graduando em Análise e Desenvolvimento de Sistemas, apaixonado por desenvolvimento e eterno aprendiz.
+Abner Andrade
+Graduando em Análise e Desenvolvimento de Sistemas, apaixonado por desenvolvimento e eterno aprendiz.
 
 👋🏽 Curtiu? Entre em contato!
 <div style="display: flex">
-<a href = "https://www.linkedin.com/in/abnerandrade/"><img src="https://img.icons8.com/color/64/null/linkedin-circled--v1.png" target="_blank"></a>
-<a href = "https://api.whatsapp.com/send?phone=5521973257039&text=Oi,%20Abner.%20Curti%20teu%20Portfólio.%20%20Vamos%20trabalhar%20juntos?"><img src="https://img.icons8.com/color/64/null/whatsapp--v1.png" target="_blank"></a>
+    <a href = "https://www.linkedin.com/in/abnerandrade/"><img src="https://img.icons8.com/color/64/null/linkedin-2--v1.png" target="_blank"></a>
+    <a href = "https://api.whatsapp.com/send?phone=5521973257039&text=Oi,%20Abner.%20Curti%20teu%20GitHub.%20%20Vamos%20trabalhar%20juntos?"><img src="https://img.icons8.com/color/64/null/whatsapp--v1.png" target="_blank"></a>
+    <a href = "mailto:aa.abnerandrade@outlook.com"><img src="https://img.icons8.com/fluency/64/null/microsoft-outlook-2019.png" target="_blank"></a>
 </div>
 
