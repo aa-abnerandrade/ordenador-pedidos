@@ -14,7 +14,6 @@ export function carregarPagina(urlCliente) {
         const jDados = await getFileData(urlCliente);
         var objCliente = construirCliente(jDados.dados);
         var lstPedidos = construirPedidos(objCliente, jDados.pedidos);
-        console.log(objCliente);
         return objCliente;
     })();
     return oc;
@@ -35,27 +34,26 @@ function construirPedidos(objCliente, dadosPedidos) {
 }
 
 
-export function ordenarPedidos(option, cliente) {
-    console.log(option, cliente)
+export function ordenarPedidos(option, listaPedidos) {
 
     switch(option) {
         case "0":
-            ordenarPadrao(cliente);
+            ordenarPadrao(listaPedidos);
             break;
         case "1":
-            ordenarPorDataDecrescente(cliente);
+            ordenarPorDataDecrescente(listaPedidos);
             break;
         case "2":
-            ordenarPorDataCrescente(cliente);
+            ordenarPorDataCrescente(listaPedidos);
             break;
         case "3":
-            ordenarPorValorDecrescente(cliente);
+            ordenarPorValorDecrescente(listaPedidos);
             break;
         case "4":
-            ordenarPorValorCrescente(cliente);
+            ordenarPorValorCrescente(listaPedidos);
             break;
         default:
-            ordenarPorRelevancia(cliente);
+            ordenarPorRelevancia(listaPedidos);
     }
 
     

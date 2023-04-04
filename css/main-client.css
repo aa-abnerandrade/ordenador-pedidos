@@ -1,6 +1,6 @@
 .client__content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     padding: .5rem 0;
     font-weight: 700;
@@ -9,5 +9,14 @@
 .client__content pre::first-line {
     font-weight: 400;
     color: var(--cinzaPrimario);
+}
+
+
+@media screen and (min-width: 769px) {
+
+    .client__content {
+        display: row;
+    }
+
 }
 

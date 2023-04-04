@@ -8,7 +8,7 @@ main {
 
 .container-page {
     background-color: var(--brancoAbsoluto);
-    width: 80%;
+    width: 100%;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     margin: 0 auto;
 }
@@ -31,4 +31,12 @@ main {
     color: var(--roxoPrimario);
     font-size: 1rem;
     font-weight: 700;
+}
+
+@media screen and (min-width: 769px) {
+
+    .container-page {
+        width: 80%;
+    }
+
 }

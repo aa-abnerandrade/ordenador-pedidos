@@ -1,41 +1,41 @@
 import { exibirPedidosEmHTML } from './contentHTML.js';
 
 
-export function ordenarPadrao(cliente) {
+export function ordenarPadrao(pedidosCliente) {
     // Conforme Gravado na Lista do Cliente
-    let pedidos = cliente.pedidos;  
+    let pedidos = pedidosCliente.slice();  
     let pedidosOrdenados = pedidos;
     exibirPedidosEmHTML(pedidosOrdenados);
 }
 
 
-export function ordenarPorDataDecrescente(cliente) {
+export function ordenarPorDataDecrescente(pedidosCliente) {
     // Mais recentes Primeiro
-    let pedidos = cliente.pedidos;
+    let pedidos = pedidosCliente.slice();
     let pedidosOrdenados = pedidos.sort((a, b)=> b.data - a.data );
     exibirPedidosEmHTML(pedidosOrdenados);
 }
 
 
-export function ordenarPorDataCrescente(cliente) {
+export function ordenarPorDataCrescente(pedidosCliente) {
     // Mais antiga Primeiro
-    let pedidos = cliente.pedidos;
+    let pedidos = pedidosCliente.slice();
     let pedidosOrdenados = pedidos.sort((a, b)=> a.data - b.data);
     exibirPedidosEmHTML(pedidosOrdenados);
 }
 
 
-export function ordenarPorValorDecrescente(cliente) {
+export function ordenarPorValorDecrescente(pedidosCliente) {
     // Mais caro Primeiro
-    let pedidos = cliente.pedidos;
+    let pedidos = pedidosCliente.slice();
     let pedidosOrdenados = pedidos.sort((a, b)=> b.valor - a.valor);
     exibirPedidosEmHTML(pedidosOrdenados);
 }
 
 
-export function ordenarPorValorCrescente(cliente) {
+export function ordenarPorValorCrescente(pedidosCliente) {
     // Mais barato Primeiro
-    let pedidos = cliente.pedidos;
+    let pedidos = pedidosCliente.slice();
     let pedidosOrdenados = pedidos.sort((a, b)=> a.valor - b.valor);
     exibirPedidosEmHTML(pedidosOrdenados);
 }

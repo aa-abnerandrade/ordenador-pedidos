@@ -11,9 +11,14 @@ const bttArrange = document.getElementById('arrangeBy');
 
 // RUN
 const urlCliente = obterCliente();
+/**
+ * Função responsável por carregar a Página e todo o seu conteúdo, encapsulando funções que geram componentes.
+ *
+ * @param {String} urlCliente
+ * @returns {Cliente} oCliente
+ */
 ( async ()=> {
     oCliente = await carregarPagina(urlCliente);
-    console.log(oCliente)
 })();
 
 
@@ -21,8 +26,7 @@ const urlCliente = obterCliente();
 bttArrange.addEventListener('click', function(e) {
     e.preventDefault();
     const optArrange = bttArrange.options[bttArrange.selectedIndex].value;
-    console.log(optArrange)
-    ordenarPedidos(optArrange, oCliente);
+    ordenarPedidos(optArrange, oCliente.pedidos);
 })
 
 

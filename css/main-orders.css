@@ -1,6 +1,6 @@
 .orders__head {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
@@ -12,15 +12,26 @@
     }
 
     .orders__head select {
-        width: 30%;
+        width: 100%;
         height: 2rem;
-        border: 2px solid var(--roxoSecundario);
+        border: 2px solid var(--roxoPrimario);
         border-radius: 6px;
-        background-color: var(--roxoPrimario);
-        color: var(--brancoAbsoluto);
+        background-color: var(--cinzaSecundario);
+        color: var(--roxoSecundario);
         font-size: 1rem;
         padding: .25rem 2rem .25rem .5rem;
     }
+
+    .orders__head select:focus {
+        outline: none;
+    }
+
+    .orders__head select option:checked {
+        background-color: var(--roxoPrimario);
+        color: var(--brancoAbsoluto);
+        outline: none;
+    }
+
 
 
 .orders__content {
@@ -36,7 +47,7 @@
         border: 1px solid var(--cinzaSecundario);
         border-radius: 2px;
         margin-bottom: 1rem;
-        padding: 0 2rem;
+        padding: 0 1rem;
         box-shadow: 0 0 0 rgba(0,0,0,0);
         transition: box-shadow .35s ease .1s;
         
@@ -61,7 +72,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        font-weight: 700;
+        font-weight: 400;
         padding: .6rem 0;
         color: var(--pretoAmeno);
     }
@@ -88,10 +99,49 @@
 
         .item__orderBody--description {
             width: 40%;
+            font-size: .8em;
         }
 
         .item__orderBody--price {
             text-align: right;
             width: 25%;
+            font-size: .8rem;
         }
 
+
+@media screen and (min-width: 769px) {
+
+    .orders__head {
+        flex-direction: row;
+    }
+
+    .orders__head select {
+        width: 30%;
+    }
+
+    .orders__head select:hover, .orders__head select:focus {
+        box-shadow: none !important;
+        outline-offset: 0px;
+        outline: none;
+    }
+
+    .orders__head select option:hover {
+        background-color: (--brancoAbsoluto) !important;
+    }
+
+    .orders__item {
+        padding: 0 2rem;
+    }
+
+    .orders__item dd {
+        font-weight: 700;
+    }
+
+    .item__orderBody--description {
+        font-size: 1rem;
+    }
+
+    .item__orderBody--price {
+        font-size: 1rem;
+    }
+}
