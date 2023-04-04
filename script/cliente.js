@@ -1,5 +1,15 @@
 import { Pedido } from './Pedido.js';
 
+/**
+ * Tipo da entidade `Cliente`
+ *
+ * @typedef {Object} Cliente
+ * @property {string} nome
+ * @property {string} email
+ * @property {number} cpf
+ * @property {Array<Pedido>} [pedidos]
+ * 
+ */
 export class Cliente {
     constructor(inputNome, inputEmail, inputCPF) {
         this.nome = inputNome;

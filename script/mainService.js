@@ -3,7 +3,13 @@ import { getFileData } from './api.js';
 import { exibirClienteEmHTML , exibirPedidosEmHTML } from './contentHTML.js'
 import { ordenarPadrao, ordenarPorDataDecrescente, ordenarPorDataCrescente, ordenarPorValorDecrescente, ordenarPorValorCrescente} from './arrangeOrders.js'
 
-
+/**
+ * Função responsável por carregar a Página e todo o seu conteúdo, encapsulando funções que geram componentes.
+ * Retorna a URL do arquivo JSON que contém os dados do cliente.
+ *
+ * @returns {string} URL do arquivo JSON do cliente.
+ * @returns {Cliente} oCliente
+ */
 export function obterCliente() {
     return 'https://raw.githubusercontent.com/aa-abnerandrade/zum_ordenaprecos/main/data/cliente.json';
 }
@@ -33,7 +39,14 @@ function construirPedidos(objCliente, dadosPedidos) {
     return objCliente.pedidos;
 }
 
-
+/**
+ * Ordena a lista de pedidos de acordo com opção escolhida.
+ * 
+ * @param {string} option - A opção escolhida para ordenação da lista de pedidos.
+ * @param {Pedido[]} listaPedidos - A lista de pedidos a ser ordenada.
+ * @returns {void} - A função não retorna nenhum valor.
+ * 
+ */
 export function ordenarPedidos(option, listaPedidos) {
 
     switch(option) {
@@ -56,5 +69,4 @@ export function ordenarPedidos(option, listaPedidos) {
             ordenarPorRelevancia(listaPedidos);
     }
 
-    
 }

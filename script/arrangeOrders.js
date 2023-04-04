@@ -8,7 +8,16 @@ export function ordenarPadrao(pedidosCliente) {
     exibirPedidosEmHTML(pedidosOrdenados);
 }
 
-
+/**
+ * Ordena os pedidos do cliente por data de forma decrescente.
+ *
+ * @param {Array} pedidosCliente - Lista de objetos do tipo Pedido contendo as informações de cada pedido.
+ * @return {void} - A função não retorna nenhum valor.
+ *
+ * @example
+ *
+ * ordenarPorDataDecrescente(pedidosDoCliente);
+ */
 export function ordenarPorDataDecrescente(pedidosCliente) {
     // Mais recentes Primeiro
     let pedidos = pedidosCliente.slice();
