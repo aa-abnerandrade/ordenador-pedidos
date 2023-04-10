@@ -37,7 +37,7 @@
 <div style="display: flex; max-width: 100%; justify-content: space-around;">
     <img style="height: 300px; width:auto;" src="./to_readme/screenshot-mobile.png" alt="Demostrativo da página utilizando um smartphone">
     <img style="height: 300px; width: auto;" src="./to_readme/screenshot-tablet.png" alt="Demostrativo da página utilizando um tablet"> 
-   <img style="height: 300px; width: auto;" src="./t./o_readme/screenshot-desktop.png" alt="Demostrativo da página utilizando um Desktop"> 
+   <img style="height: 300px; width: auto;" src="./to_readme/screenshot-desktop.png" alt="Demostrativo da página utilizando um Desktop"> 
 </div>
 
 
