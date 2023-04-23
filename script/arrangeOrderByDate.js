@@ -1,6 +1,5 @@
 console.log('Ordenando Lista de Pedidos');
 
-
 // Solução 1: Trabalhando com Elementos Primitivos
 let listaL = [
     [1, "2019-05-20"],
